@@ -1,0 +1,338 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #444444;
+}
+body {
+  background-color: #8e8d8a;
+  font-family: "Montserrat", sans-serif;
+}
+.cont {
+  margin: 0 auto;
+}
+.modalBack {
+  width: 100%;
+  height: 100%;
+  background-color: aqua;
+}
+.back {
+  background-color: #d8c3a5;
+  width: 1200px;
+  min-height: 100vh;
+  padding-bottom: 50px;
+  text-align: center;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  padding-top: 35px;
+}
+.regHeader {
+  width: 1000px;
+  height: 45px;
+  background-color: #eae7d7;
+  box-shadow: 0 1px rgba(255, 255, 255, 0.2) inset, 0 3px 5px rgba(0, 1, 6, 0.5), 0 0 1px 1px rgba(0, 1, 6, 0.2);
+  opacity: 0.9;
+  border-radius: 10px;
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.topRegButton {
+  background-color: whitesmoke;
+  box-shadow: 0 1px rgba(255, 255, 255, 0.2) inset, 0 3px 5px rgba(0, 1, 6, 0.5), 0 0 1px 1px rgba(0, 1, 6, 0.2);
+  outline: none;
+  border: none;
+  padding: 5px;
+  border-radius: 4px;
+  height: 25px;
+  width: 138px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.topRegButton:hover {
+  background-color: lightgray;
+}
+.leftRegBlock {
+  margin-left: 30px;
+}
+.rightRegBlock {
+  margin-right: 25px;
+  display: flex;
+}
+.logInBar {
+  width: 1000px;
+  height: 190px;
+  background-color: #eae7d7;
+  box-shadow: 0 1px rgba(255, 255, 255, 0.2) inset, 0 3px 5px rgba(0, 1, 6, 0.5), 0 0 1px 1px rgba(0, 1, 6, 0.2);
+  opacity: 0.9;
+  border-radius: 10px;
+  padding-top: 30px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  animation: ani 0.4s both;
+}
+@keyframes ani {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+.logInButton {
+  box-shadow: 0 1px rgba(255, 255, 255, 0.2) inset, 0 3px 5px rgba(0, 1, 6, 0.5), 0 0 1px 1px rgba(0, 1, 6, 0.2);
+  outline: none;
+  border: none;
+  padding: 5px;
+  border-radius: 4px;
+  height: 25px;
+  width: 138px;
+  cursor: pointer;
+}
+.logInButton:hover {
+  color: white;
+  background-color: #ff4d4d;
+}
+.regInputBlock {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  gap: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.regInput {
+  border: none;
+  border-radius: 5px;
+  height: 25px;
+  margin-top: 5px;
+  background-color: #e2e5e5;
+  outline: none;
+  padding-left: 14px;
+  padding-right: 14px;
+  text-align: center;
+  box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px #ffffff;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.regInput:hover {
+  background-color: lightgray;
+}
+.calcTop {
+  width: 1000px;
+  height: 650px;
+  background-color: #f7f7f7;
+  box-shadow: 0 1px rgba(255, 255, 255, 0.2) inset, 0 3px 5px rgba(0, 1, 6, 0.5), 0 0 1px 1px rgba(0, 1, 6, 0.2);
+  opacity: 0.9;
+  border-radius: 10px;
+  padding-top: 30px;
+}
+.topText {
+  font-size: 35px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+.topTextMini {
+  margin-top: 22px;
+  font-size: 22px;
+}
+.catBlock {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 30px;
+}
+.catItem {
+  width: 220px;
+  height: 220px;
+  border-radius: 10px;
+  background-color: #f7f7f7;
+  box-shadow: 0 1px rgba(255, 255, 255, 0.2) inset, 0 3px 5px rgba(0, 1, 6, 0.5), 0 0 1px 1px rgba(0, 1, 6, 0.2);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+.catItem:hover {
+  background: lightgray;
+}
+.printImg {
+  height: 120px;
+}
+.midSliderCont {
+  width: 1200px;
+  height: 388px;
+  overflow: hidden;
+}
+.midSliderLine {
+  width: 4800px;
+  display: flex;
+  position: relative;
+  left: 0px;
+  transition: all ease 2s;
+}
+.categoryMid {
+  width: 1000px;
+  height: 380px;
+  background-color: #f7f7f7;
+  box-shadow: 0 1px rgba(255, 255, 255, 0.2) inset, 0 3px 5px rgba(0, 1, 6, 0.5), 0 0 1px 1px rgba(0, 1, 6, 0.2);
+  opacity: 0.9;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 1px;
+}
+.midBigText {
+  font-size: 25px;
+  margin-top: 22px;
+}
+.calc {
+  min-width: 800px;
+  padding-right: 100px;
+  padding-left: 100px;
+  /* padding-top: 100px; */
+  padding-bottom: 30px;
+  background-color: #eae7d7;
+  box-shadow: 0 1px rgba(255, 255, 255, 0.2) inset, 0 3px 5px rgba(0, 1, 6, 0.5), 0 0 1px 1px rgba(0, 1, 6, 0.2);
+  opacity: 0.9;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.calcTopP {
+  margin-top: 15px;
+}
+.calcInputBlock {
+  margin-top: 30px;
+  width: 800px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.sizeInputWidth {
+  border: none;
+  border-radius: 5px;
+  height: 25px;
+  width: 110px;
+  margin-top: 5px;
+  background-color: #e2e5e5;
+  outline: none;
+  padding-left: 14px;
+  padding-right: 14px;
+  text-align: center;
+  box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px #ffffff;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.sizeInputWidth:hover {
+  background-color: #ff4d4d;
+  color: white;
+}
+.sizeInputHeight {
+  border: none;
+  border-radius: 5px;
+  height: 25px;
+  width: 110px;
+  margin-top: 5px;
+  background-color: #e2e5e5;
+  outline: none;
+  padding-left: 14px;
+  padding-right: 14px;
+  text-align: center;
+  box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px #ffffff;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.sizeInputHeight:hover {
+  background-color: #ff4d4d;
+  color: white;
+}
+.count {
+  border: none;
+  border-radius: 5px;
+  height: 25px;
+  width: 110px;
+  margin-top: 5px;
+  background-color: #e2e5e5;
+  outline: none;
+  padding-left: 14px;
+  padding-right: 14px;
+  text-align: center;
+  box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px #ffffff;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.count:hover {
+  background-color: #ff4d4d;
+  color: white;
+}
+.addButton {
+  box-shadow: 0 1px rgba(255, 255, 255, 0.2) inset, 0 3px 5px rgba(0, 1, 6, 0.5), 0 0 1px 1px rgba(0, 1, 6, 0.2);
+  outline: none;
+  border: none;
+  padding: 5px;
+  border-radius: 4px;
+  height: 25px;
+  width: 138px;
+  margin-top: 23px;
+  cursor: pointer;
+}
+.addButton:hover {
+  background-color: #ff4d4d;
+  opacity: 0.9;
+  color: white;
+}
+.orderString {
+  width: 800px;
+  height: 65px;
+  display: flex;
+  box-shadow: 0 1px rgba(255, 255, 255, 0.2) inset, 0 3px 5px rgba(0, 1, 6, 0.5), 0 0 1px 1px rgba(0, 1, 6, 0.2);
+  border: none;
+  padding: 5px;
+  border-radius: 4px;
+  background: lightgray;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+.out {
+  margin-top: 50px;
+}
+.orderStringBlock {
+  outline: none;
+  border: none;
+  height: 60px;
+  width: 138px;
+  display: flex;
+  flex-direction: column;
+}
+.orderSmallText {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+.outHistory {
+  margin-top: 50px;
+}
+.orderHistory {
+  width: 800px;
+  height: 65px;
+  display: flex;
+  justify-content: space-evenly;
+  box-shadow: 0 1px rgba(255, 255, 255, 0.2) inset, 0 3px 5px rgba(0, 1, 6, 0.5), 0 0 1px 1px rgba(0, 1, 6, 0.2);
+  border: none;
+  padding: 5px;
+  border-radius: 4px;
+  background: whitesmoke;
+  margin-bottom: 15px;
+  padding: 10px;
+  cursor: pointer;
+}
+.orderHistory:hover {
+  background-color: lightgrey;
+}

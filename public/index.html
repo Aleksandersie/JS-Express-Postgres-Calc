@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Калькулятор печати</title>
+      <link rel="stylesheet" href="./style.css" />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap"
+         rel="stylesheet"
+      />
+   </head>
+   <body>
+      <div class="modalBack"></div>
+      <div class="back cont">
+         <div class="regHeader">
+            <div class="leftRegBlock"><div id="hello"></div></div>
+            <div class="rightRegBlock">
+               <button class="topRegButton" id="topLoginButton">Войти</button>
+               <button class="topRegButton" id="topLogOutButton">Выйти</button>
+               <button class="topRegButton">Регистрация</button>
+            </div>
+         </div>
+         <div class="logInBar" id="logInBar">
+            <div class="">Введите имя пользователя и пароль</div>
+            <div class="regInputBlock">
+               <input
+                  type="text"
+                  class="regInput"
+                  placeholder="Введите логин"
+                  id="login"
+               />
+               <input
+                  type="password"
+                  class="regInput"
+                  placeholder="Введите пароль"
+                  id="password"
+               />
+            </div>
+            <div class="">
+               <button class="logInButton" id="loginButton">Войти</button>
+            </div>
+         </div>
+         <!-- <div class="calcTop cont">
+            <div class="topText">Калькулятор расчёта заказов</div>
+            <div class="topTextMini">Выберите категорию</div>
+            <div class="catBlock">
+               <div class="catItem" id="printOnly">
+                  <p>
+                     Широкоформатная <br />
+                     печать
+                  </p>
+                  <img class="printImg" src="./img/print.svg" alt="" />
+               </div>
+               <div class="catItem" id="printCut">
+                  <p>
+                     Печать с контурной <br />
+                     резкой
+                  </p>
+                  <img class="printImg" src="./img/print.svg" alt="" />
+               </div>
+               <div class="catItem" id="cutting">
+                  <p>
+                     Плоттерная <br />
+                     резка
+                  </p>
+                  <img class="printImg" src="./img/print.svg" alt="" />
+               </div>
+               <div class="catItem" id="coldLam">
+                  <p>
+                     Холодная <br />
+                     ламинация
+                  </p>
+                  <img class="printImg" src="./img/print.svg" alt="" />
+               </div>
+               <div class="catItem">
+                  <p>
+                     Цифровая <br />
+                     печать
+                  </p>
+                  <img class="printImg" src="./img/print.svg" alt="" />
+               </div>
+               <div class="catItem">
+                  <p>
+                     Картины <br />
+                     на холсте
+                  </p>
+                  <img class="printImg" src="./img/print.svg" alt="" />
+               </div>
+               <div class="catItem">
+                  <p>
+                     Стенды <br />
+                     и таблички
+                  </p>
+                  <img class="printImg" src="./img/print.svg" alt="" />
+               </div>
+               <div class="catItem">
+                  <p>
+                     Выставочное <br />
+                     оборудование
+                  </p>
+                  <img class="printImg" src="./img/print.svg" alt="" />
+               </div>
+            </div>
+         </div>
+         <div class="midSliderCont">
+            <div class="midSliderLine" id="midSliderLine">
+               <div class="categoryMid cont">
+                  <p class="midBigText">Широкоформатная печать</p>
+                  <p class="topTextMini">Выберите тип работ</p>
+                  <div class="catBlock">
+                     <div class="catItem">
+                        <p>
+                           Печать на <br />
+                           пленке
+                        </p>
+                        <img class="printImg" src="./img/print.svg" alt="" />
+                     </div>
+                     <div class="catItem">
+                        <p>
+                           Печать на <br />
+                           баннере
+                        </p>
+                        <img class="printImg" src="./img/print.svg" alt="" />
+                     </div>
+                     <div class="catItem">
+                        <p>
+                           Печать на <br />
+                           бумаге
+                        </p>
+                        <img class="printImg" src="./img/print.svg" alt="" />
+                     </div>
+                     <div class="catItem">
+                        <p>
+                           Печать на <br />
+                           пластике и других материалах
+                        </p>
+                        <img class="printImg" src="./img/print.svg" alt="" />
+                     </div>
+                  </div>
+               </div>
+               <div class="categoryMid cont">
+                  <p class="midBigText">Печать с контурной резкой</p>
+                  <p class="topTextMini">Выберите тип работ</p>
+                  <div class="catBlock">
+                     <div class="catItem">
+                        <p>
+                           Печать и резка <br />
+                           на пленке
+                        </p>
+                        <img class="printImg" src="./img/print.svg" alt="" />
+                     </div>
+                     <div class="catItem">
+                        <p>
+                           Печать с ламинацией <br />
+                           и резкой
+                        </p>
+                        <img class="printImg" src="./img/print.svg" alt="" />
+                     </div>
+                     <div class="catItem">
+                        <p>Печать и резка <br />термопленки</p>
+                        <img class="printImg" src="./img/print.svg" alt="" />
+                     </div>
+                     <div class="catItem">
+                        <p>
+                           Гарантийные <br />
+                           стикеры
+                        </p>
+                        <img class="printImg" src="./img/print.svg" alt="" />
+                     </div>
+                  </div>
+               </div>
+
+               <div class="categoryMid cont">
+                  <p class="midBigText">Плоттерная резка</p>
+                  <p class="topTextMini">Выберите тип работ</p>
+                  <div class="catBlock">
+                     <div class="catItem">
+                        <p>
+                           Плоттерная резка <br />
+                           пленки
+                        </p>
+                        <img class="printImg" src="./img/print.svg" alt="" />
+                     </div>
+                     <div class="catItem">
+                        <p>
+                           Плоттерная резка <br />
+                           термопленки
+                        </p>
+                        <img class="printImg" src="./img/print.svg" alt="" />
+                     </div>
+                     <div class="catItem">
+                        <p>
+                           Резка с чисткой<br />
+                           и монтажной пленкой
+                        </p>
+                        <img class="printImg" src="./img/print.svg" alt="" />
+                     </div>
+                  </div>
+               </div>
+
+               <div class="categoryMid cont">
+                  <p class="midBigText">Холодная ламинация</p>
+                  <p class="topTextMini">Выберите тип работ</p>
+                  <div class="catBlock">
+                     <div class="catItem">
+                        <p>
+                           Плоттерная резка <br />
+                           пленки
+                        </p>
+                        <img class="printImg" src="./img/print.svg" alt="" />
+                     </div>
+                     <div class="catItem">
+                        <p>
+                           Плоттерная резка <br />
+                           термопленки
+                        </p>
+                        <img class="printImg" src="./img/print.svg" alt="" />
+                     </div>
+                     <div class="catItem">
+                        <p>
+                           Резка с чисткой<br />
+                           и монтажной пленкой
+                        </p>
+                        <img class="printImg" src="./img/print.svg" alt="" />
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div> -->
+         <div class="calcSliderWindow cont">
+            <div class="calc cont">
+               <div class="topTextMini">Калькулятор печати на наклеек</div>
+               <p class="calcTopP">Укажите размеры изделия</p>
+               <div class="calcInputBlock">
+                  <div class="windthBlock">
+                     <p>Ширина</p>
+                     <input type="text" class="sizeInputWidth" id="width" />
+                  </div>
+                  <div class="heightBlock">
+                     <p>Высота</p>
+                     <input type="text" class="sizeInputHeight" id="height" />
+                  </div>
+                  <div class="countBlock">
+                     <p>Количество</p>
+                     <input type="text" class="count" id="count" />
+                  </div>
+                  <button class="addButton" id="add">Добавить в заказ</button>
+               </div>
+            </div>
+         </div>
+
+         <div class="orderListWindow cont">
+            <div class="calc cont">
+               <div class="topTextMini">Состав заказа</div>
+               <div id="out" class="out"></div>
+               <button class="logInButton" id="testP">Отправить заказ</button>
+            </div>
+            <!-- <button id="testP">Отправить заказ</button> -->
+         </div>
+         <div class="orderListWindow cont">
+            <div class="calc cont">
+               <div class="topTextMini">История заказов</div>
+               <div id="outHistory" class="outHistory"></div>
+            </div>
+            <!-- <button id="testF">История заказов</button> -->
+         </div>
+      </div>
+
+      <!-- <div class="orderString" data-id="" id="block">
+                        <div class="orderStringBlock"><p class="orderSmallText">Вид работ:</p><p>Интерьерная <br> печать</p></div>
+                        <div class="orderStringBlock"><p class="orderSmallText">Материал:</p><p>Плёнка</p></div>
+                        <div class="orderStringBlock"><p class="orderSmallText">Размеры:</p><p></p></div>
+                        <div class="orderStringBlock"><p class="orderSmallText">Количество:</p><p></p></div>
+                        <div class="orderStringBlock"><p class="orderSmallText">Площадь:</p><p></p></div>
+                        <div class="orderStringBlock"><p class="orderSmallText">Стоимость:</p><p></p></div>
+                        <div class="orderStringBlock" data-id="${item.id}" id="del" ><p class="orderSmallText"></p><p class="del">Удалить</p></div>
+                    </div>          -->
+
+      <script src="./main.js"></script>
+   </body>
+</html>
